@@ -386,12 +386,14 @@ h1{
     color: var(--font-color1);
     font-size: 20px;
     padding: 10px 0;
+    transition: var(--main-duration) ease;
 }
 
 .card .info p{
     font-size: 13px;
     padding: 10px 20px;
     color: var(--font-color1);
+    transition: var(--main-duration) ease;
 }
 
 .card .info .social-icons a{
@@ -399,6 +401,7 @@ h1{
     text-decoration: none;
     margin-top: 20px;
     padding: 0 5px;
+    transition: var(--main-duration) ease;
 }
 
 .card .info .social-icons a:hover{
