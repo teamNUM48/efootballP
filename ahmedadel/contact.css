@@ -411,3 +411,11 @@ h1{
         padding-left: 80px;
     }
 }
+.card .info h3:hover{
+    color: var(--hover-color);
+    cursor: pointer;
+}
+.card .info p:hover{
+    color: var(--hover-color);
+    cursor: pointer;
+}
