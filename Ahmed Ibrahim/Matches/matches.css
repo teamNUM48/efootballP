@@ -545,7 +545,7 @@ footer .container ul {
     .navigation {
         display: none;
     }
-    header .left-section a {
+    .logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
