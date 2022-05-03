@@ -1,11 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27);
+
 :root {
-    --font-color1: #00ff00;
+    --font-color1: #04ff00;
     --header-color: rgb(0 16 1 / 90%);
     --font-color2:  #fff;
     --backgr-color: #000016;
     --hover-color: rgb(248, 70, 0);
     --main-duration: 0.5s;
 }
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -14,181 +17,20 @@
     scroll-behavior: smooth;
 }
 
-/* 
 html {
     font-size: 10px;
 }
 
 body {
-    line-height: 1.5;
-} */
-
-
-body {
     background: url(/efootballP/mages/صور-ملاعب23.webp);
     background: #67B26F;
-    /* background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);*/
-    /* background: linear-gradient(to right, #4ca2cd, #67B26F); */
-    background: url(/efootballP/mages/صور-ملاعب23.webp);
     background-size: cover;
-    padding: 0;
-    margin: 0; 
-    font-family: 'Lato', sans-serif;
-    color: #000;
-}
-.container
-{   
-    margin-top: 60px;
-}
-.card-header .mb-0
-{
-    color: red
-}
-.col-lg-4 .card
-{
-    background-color: #000016;
-}
-.card a h3
-{
-    
-    color: white;
-}
-
-.student-profile .card {
-    border-radius: 10px;
-}
-.student-profile .card .card-header .profile_img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 10px auto;
-    border:10px solid #69c771;
-    border-radius: 50%;
-}
-.student-profile .card h3 {
-    font-size: 20px;
-    font-weight: 700;
-}
-.student-profile .card p {
-    font-size: 16px;
-    color: #000;
-}
-.student-profile .table th,
-.student-profile .table td {
-    font-size: 14px;
-    padding: 5px 10px;
-    color: #000;
-}
-.card-body h2
-{
-    color: green;
-    font-size: 35px;
-    font-weight: 600;
-}
-.card-body ul li
-{
-    margin-left: 1rem;
-}
-
-
-
-/* start footer */
-footer{
-    background-color: var(--header-color);
-    padding: 70px 0;
-}
-
-.containerr {
-    max-width: 1170px;
-    margin: auto;
-}
-
-footer .containerr ul {
-    list-style: none;
-}
-
-.roow{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col1 {
-    /*width: 25%;*/
-    margin-left: 100px;
-    padding: 0 15px;
-}
-
-.col1 h4 {
-    font-size: 18px;
-    color: #f0f0f0;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
+    line-height: 1.5;
     position: relative;
+    min-height: 100vh;
 }
-
-.col1 h4::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    left: 0;
-    bottom: -10px;
-    background-color: var(--font-color1);
-    height: 2px;
-}
-
-.col1 ul li:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-.col1 ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    transition: 0.3s ease;
-}
-
-.col1 ul li a:hover {
-    color: #ffffff;
-    padding-left: 8px;
-}
-
-.col1 .social-icons a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    font-size: 15px;
-    font-weight: 300;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: var(--main-duration) ease;
-}
-
-.col1 .social-icons a:hover {
-    color: var(--font-color1);
-    background-color: #ffffff;
-} 
-
-@media(max-width: 767px){
-    .col1 {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width: 574px){
-    .col1 {
-        width: 100%;
-    }
-}
-/* end footer */
-
+/* ================================================================= */
+/* start header */
 header {
     position: relative;
     position: fixed;
@@ -405,4 +247,161 @@ header .main_logo img {
     }
 }
 /* end header */
+/* ================================================================= */
 
+.container
+{   
+    margin-top: 60px;
+}
+.card-header .mb-0
+{
+    color: red
+}
+.col-lg-4 .card
+{
+    background-color: #000016;
+}
+.card a h3
+{
+    
+    color: white;
+}
+
+.student-profile .card {
+    border-radius: 10px;
+}
+.student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border:10px solid #69c771;
+    border-radius: 50%;
+}
+.student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.student-profile .card p {
+    font-size: 16px;
+    color: #000;
+}
+.student-profile .table th,
+.student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+}
+.card-body h2
+{
+    color: green;
+    font-size: 35px;
+    font-weight: 600;
+}
+.card-body ul li
+{
+    margin-left: 1rem;
+}
+
+
+
+/* ===================================================================== */
+/* start footer */
+footer{
+    background-color: var(--header-color);
+    width: 100%;
+    padding: 70px 0;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+footer .container ul {
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    /* width: 25%; */
+    margin-left: 100px;
+    padding: 0 15px;
+}
+
+.col h4 {
+    font-size: 18px;
+    color: #f0f0f0;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.col h4::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--font-color1);
+    height: 2px;
+}
+
+.col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    transition: 0.3s ease;
+}
+
+.col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.col .social-icons a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: var(--main-duration) ease;
+}
+
+.col .social-icons a:hover {
+    color: var(--font-color1);
+    background-color: #ffffff;
+} 
+
+@media(max-width: 767px){
+    .col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .col {
+        width: 100%;
+    }
+}
+
+
+/* end footer */
+/* ================================================================== */
