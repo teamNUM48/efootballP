@@ -1,5 +1,5 @@
 :root {
-    --font-color1: #08BD2c;
+    --font-color1: #00ff00;
     --header-color: rgb(0 16 1 / 90%);
     --font-color2:  #fff;
     --backgr-color: #000016;
@@ -28,7 +28,7 @@ body {
     background: #67B26F;
     /* background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);*/
     /* background: linear-gradient(to right, #4ca2cd, #67B26F); */
-    background: url(/mages/صور-ملاعب23.webp);
+    background: url(/efootballP/mages/صور-ملاعب23.webp);
     background-size: cover;
     padding: 0;
     margin: 0; 
