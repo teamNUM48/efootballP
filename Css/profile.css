@@ -25,6 +25,7 @@ body {
 
 
 body {
+    background: url(/efootballP/mages/صور-ملاعب23.webp);
     background: #67B26F;
     /* background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);*/
     /* background: linear-gradient(to right, #4ca2cd, #67B26F); */
@@ -36,7 +37,7 @@ body {
     color: #000;
 }
 .container
-{
+{   
     margin-top: 60px;
 }
 .card-header .mb-0
