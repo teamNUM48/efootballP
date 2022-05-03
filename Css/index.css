@@ -7,7 +7,7 @@
 
 .bg-img
 {
-    background: url('/mages/club.jpg');
+    background: url('/efootballP/mages/club.jpg');
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -160,4 +160,15 @@ input[type="submit"]:hover
 {
     color: red;
     text-decoration: underline;
+}
+#wrong{
+    color: red;
+    display: none;
+}
+#wrong p{
+    font-size: 2em;
+}
+#wrong i{
+    font-size: 1em;
+    text-align: center;
 }
