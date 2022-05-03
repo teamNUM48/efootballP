@@ -9,3 +9,6 @@ wewe.innerHTML = data.username;
 
 let fullName = document.getElementById('fullName');
 fullName.innerHTML = data.fullName;
+
+let email = document.getElementById('email');
+email.innerHTML = data.email;

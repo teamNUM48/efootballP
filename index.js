@@ -17,16 +17,19 @@ let login = [
     username: "admin1",
     password: "12345678",
     fullName: "ahmed Khaled mohamed",
+    email:"ahmed_khaled@gmail.com"
 },
 {
     username:"admin2",
     password:"123456789",
     fullName:"ahmed saber",
+    email:"ahmed_saber@gmail.com"
 },
 {
     username:"admin3",
     password:"12345678910",
     fullName:"ahmed atef",
+    email:"ahmed_atef@gmail.com"
 },
 ]
 let webo = document.getElementById("webo")
@@ -46,4 +49,3 @@ webo.onsubmit = ()=>{
     }      
        
 }
-
