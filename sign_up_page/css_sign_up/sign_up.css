@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27);
+
+:root {
+    --font-color1: #04ff00;
+    --header-color: rgb(0 16 1 / 90%);
+    --font-color2:  #fff;
+    --backgr-color: #000016;
+    --hover-color: rgb(248, 70, 0);
+    --main-duration: 0.5s;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    line-height: 1.5;
+    position: relative;
+    min-height: 100vh;
+}
+/* ================================================================= */
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../pictures_sign_up/6942094.jpg);
+    background-size: cover;
+    background-position: bottom left;
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    border-top: 5px solid var(--font-color1);
+    background: var(--backgr-color);
+    border-radius: 12px;
+    margin: 50px 0 50px 0;
+    box-shadow: 0 5px 25px rgba(4, 255, 0, 30%);
+}
+
+.container .form {
+    padding: 60px;
+}
+
+.form .main_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color1);
+    font-weight: 400;
+    font-size: 4rem;
+    transition: var(--main-duration) ease;
+}
+
+.form .main_logo img {
+    width: 100px;
+    height: 60px;
+    padding-right: 10px;
+}
+
+.form .main_logo span {
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 0.5px var(--font-color1);
+}
+.form .main_logo span::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: 100%;
+    color: var(--font-color1);
+    -webkit-text-stroke: 0 var(--font-color1);
+    border-right: 2px solid var(--font-color1);
+    overflow: hidden;
+    animation: animate 4s both infinite;
+}
+
+@keyframes animate {
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+.form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000016;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    transition: all var(--main-duration) ease;
+}
+
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: var(--font-color1);
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 15px;
+}
+
+.input-field input:is(:focus, :valid) ~ i,
+.input-field input:is(:focus, :valid) ~ label i {
+    color: var(--font-color1);
+}
+
+.input-field #icon {
+    left: 0;
+}
+
+.input-field #showHide {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .button {
+    margin-top: 35px;
+
+}
+
+.form .button input {
+    border: none;
+    background-color: var(--font-color1);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form .button input:hover {
+    transform: scale(1.1);
+    background-color: var(--hover-color);
+}
+
+/* ======================================== */
+
+
+.form p {
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.form p span {
+    color: var(--font-color1);
+}
