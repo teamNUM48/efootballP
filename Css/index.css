@@ -7,7 +7,7 @@
 
 .bg-img
 {
-    background: url('../mages/club.jpg');
+    background: url('/efootballP/mages/club.jpg');
     background-size: cover;
     height: 100vh;
     background-position: center;
