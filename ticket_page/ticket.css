@@ -235,7 +235,7 @@ header .logo img {
     .navigation {
         display: none;
     }
-    header .left-section .main_logo {
+    header .left-section .logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
