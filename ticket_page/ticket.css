@@ -201,7 +201,7 @@ header .left-section a {
 }
 /* end sidebar */
 
-header .main_logo {
+header .logo {
     text-decoration: none;
     color: var(--font-color1);
     font-weight: 400;
@@ -209,11 +209,11 @@ header .main_logo {
     transition: var(--main-duration) ease;
 }
 
-header .main_logo:hover {
+header .logo:hover {
     color: var(--hover-color);
 }
 
-header .main_logo img {
+header .logo img {
     width: 60px;
     height: 40px;
     padding-right: 10px;
