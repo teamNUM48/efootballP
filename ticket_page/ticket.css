@@ -218,8 +218,6 @@ header .main_logo img {
     height: 40px;
     padding-right: 10px;
 }
-
-
 .navigation a {
     color: var(--font-color1);
     font-size: 1.7rem;
@@ -387,7 +385,7 @@ header .main_logo img {
 	margin-bottom: 10px;
 }
 
-.container {
+.container1 {
 	position: relative;
 	width: 100%;
 	display: flex;
@@ -415,7 +413,7 @@ header .main_logo img {
     transform: scale(1.1);
 } */
 /* ================================================================= */
-/* start landing */
+
 section {
     padding: 100px 200px;
     background-color: #000016;
