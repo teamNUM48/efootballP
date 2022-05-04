@@ -1,3 +1,21 @@
+const pass_field = document.querySelector('.pass');
+const show_btn = document.querySelector('#showHide');
+show_btn.addEventListener('click', function(){
+    if(pass_field.type === "password"){
+        pass_field.type = "text";
+        show_btn.classList.remove("fas");
+        show_btn.classList.remove("fa-eye-slash");
+        show_btn.classList.add("fas");
+        show_btn.classList.add("fa-eye");
+    }else{
+        pass_field.type = "password";
+        show_btn.classList.remove("fas");
+        show_btn.classList.remove("fa-eye");
+        show_btn.classList.add("fas");
+        show_btn.classList.add("fa-eye-slash");
+    }
+})
+//------------------------------- 
 let login = [{
     username:"",
     email:"",
