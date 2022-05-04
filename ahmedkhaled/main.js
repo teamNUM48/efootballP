@@ -218,3 +218,8 @@ btn.onclick = function () {
     sidebar.classList.toggle("active");
 };
 // end sidebar
+// scroll to top
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+// --------------------------------
