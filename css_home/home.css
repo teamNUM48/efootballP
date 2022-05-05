@@ -494,6 +494,7 @@ section {
     font-size: 20px;
     flex-wrap: wrap;
     transition: var(--main-duration) ease;
+    text-decoration: none;
 }
 
 .MOTM:hover {
