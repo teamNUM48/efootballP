@@ -407,3 +407,105 @@ input[type="button"]:hover{
 #name{
     border: var(--font-color1) 5px solid;
 }
+
+
+/* ===================================================================== */
+/* start footer */
+footer{
+    background-color: var(--header-color);
+    width: 100%;
+    padding: 70px 0;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+footer .container ul {
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    /* width: 25%; */
+    margin-left: 100px;
+    padding: 0 15px;
+}
+
+.col h4 {
+    font-size: 18px;
+    color: #f0f0f0;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.col h4::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--font-color1);
+    height: 2px;
+}
+
+.col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    transition: 0.3s ease;
+}
+
+.col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.col .social-icons a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: var(--main-duration) ease;
+}
+
+.col .social-icons a:hover {
+    color: var(--font-color1);
+    background-color: #ffffff;
+} 
+
+@media(max-width: 767px){
+    .col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .col {
+        width: 100%;
+    }
+}
+
+
+/* end footer */
+/* ================================================================== */
