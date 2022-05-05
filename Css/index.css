@@ -7,7 +7,7 @@
 
 .bg-img
 {
-    background: url('/efootballP/mages/club.jpg');
+    background: url('/efootballP/mages/club.png');
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -70,7 +70,7 @@ img
     display: flex; 
     outline: none;
     border: none;
-    border-bottom: 2px solid #0094ff;
+    border-bottom: 2px solid #00ff00;
     background: none;
 }
 .filed input
