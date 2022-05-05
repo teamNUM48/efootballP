@@ -770,10 +770,20 @@ footer .container ul {
     cursor: pointer;
     color: #fff;
     transition: var(--main-duration) ease;
+    animation-name: up_to_dwon;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .scrollTop:hover {
     background-color: #fff;
     color: var(--font-color1);
 }
+@keyframes up_to_dwon {
+    to{
+        bottom: 60px
+    }
+  }
 /* =============================================== */
+
