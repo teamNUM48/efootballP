@@ -257,7 +257,7 @@ header .logo img {
     background-color: rgb(0 0 0 / 75%);
 }
 .pad{
-    margin-left: 40%;
+    margin-left: 30%;
     line-height: 50px;
 }
 
@@ -265,63 +265,9 @@ header .logo img {
     display: flex;
         justify-content: space-between;
             align-items: center;
-                width: 60%;
+                width: 80%;
                 }
 
-.progress-step-container{
-    display: flex;
-        justify-content: center;
-            align-items: center;
-                flex-direction: column;
-                }
-
-.step-check{
-    background-color: rgb(0, 132, 255);
-        height: 30px;
-            width: 30px;
-                border-radius: 30px;
-                    margin-bottom: 1rem;
-                        position: relative;
-                            background-image: url(Resources/check.svg);
-                                background-position: center;
-                                    background-repeat: no-repeat;
-                                        background-size: 60%;
-                                        }
-
-.progress-step-container:nth-of-type(3) .step-check::after{
-    display: none;
-}
-
-.progress-step-container:nth-of-type(3) .step-check{
-        background-image: none;
-            background-color: white;
-                border: 2px solid grey;
-                }
-
-.progress-step-container:nth-of-type(2) .step-check::after{
-    background-color: grey;
-    }
-
-.progress-step-container:nth-of-type(2) .step-check{
-    background-image: none;
-        background-color: white;
-            border: 2px solid rgb(0, 132, 255);
-            }
-
-.step-check::after{
-    content: "";
-        width: 15vw;
-            height: 2px;
-                background-color: inherit;
-                    position: absolute;
-                        top: 50%;
-                            right: 0;
-                                transform: translateX(100%) translateY(-50%);
-                                }
-
-.step-title{
-    color: grey;
-    }
 
 .form-container{
     width: 60%;
@@ -367,7 +313,8 @@ input[type="text"]{
     width: 100%;
         height: 40px;
             padding: 0 10px;
-                background-color: #f2f2f2;
+                background-color: transparent;
+                color: #fff;
                     border-radius: 5px;
                         border: none;
                         outline: none;
@@ -399,7 +346,7 @@ input[type="text"]::placeholder{
 
 .button a{
     background: var(--font-color1);
-    padding: 0 30px;
+    padding: 0 50px;
     border-radius: 12px;
     text-decoration: none;
     transition: var(--main-duration) ease;
@@ -426,7 +373,8 @@ input[type="text"]::placeholder{
 }
 
 #name{
-    border: var(--font-color1) 5px solid;
+    border-bottom: var(--font-color1) 2px solid;
+    border-right: var(--font-color1) 2px solid;
 }
 
 
