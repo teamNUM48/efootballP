@@ -16,12 +16,14 @@ show_btn.addEventListener('click', function(){
     }
 })
 //------------------------------- 
+
 let login = [{
     username:"",
     email:"",
     password:"",
     fullName:""
-}]
+}];
+let login2 = [];
 let x = 1;
 let username = document.getElementById('username')
 let fullName = document.getElementById('fullName')
@@ -31,11 +33,13 @@ let register = document.getElementById("register")
 
 register.onsubmit = ()=>{
     if(x == 1){
-    login[0].username = JSON.stringify(username.value)
-    login[0].fullName = JSON.stringify(fullName.value)
-    login[0].email = JSON.stringify(email.value)
-    login[0].password = JSON.stringify(pass.value)
+    login[0].username = username.value
+    login[0].fullName = fullName.value
+    login[0].email = email.value
+    login[0].password = pass.value
     localStorage.login = JSON.stringify(login[0])
+    login2.push(login[0])
+    localStorage.login2 = JSON.stringify(login2)
     return true;    
     }
     else{
