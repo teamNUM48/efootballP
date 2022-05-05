@@ -35,16 +35,24 @@ let login = [
 let webo = document.getElementById("webo")
 let username = document.getElementById('email')
 let pass = document.getElementById('pass')
+let login2 = JSON.parse(localStorage.login2);
 webo.onsubmit = ()=>{
     for(i=0; i < login.length; i++){
     if (username.value === login[i].username && pass.value === login[i].password) {
         localStorage.login = JSON.stringify(login[i])
         return true;
-    }else{
-        if (i == login.length-1){
-            document.getElementById("wrong").style.display = 'block'
-            return false;
-        }
+    }
+    }   
+    for(i=0; i < login2.length; i++){
+    if(username.value === login2[i].username && pass.value === login2[i].password){
+        localStorage.login = JSON.stringify(login2[i])
+        return true;
+    }
+    else
+    {
+        document.getElementById("wrong").style.display = 'block'
+        return false;
+
     }
     }      
        
