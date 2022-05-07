@@ -1,8 +1,13 @@
 let desc;
 let project_name = document.getElementById('project_name');
+let des = document.getElementById('des');
+
 let price = document.getElementById('price');
 desc = JSON.parse(localStorage.branch);
+
 project_name.innerHTML = desc.title;
+des.innerHTML = desc.desc;
+
 price.innerHTML = desc.price
 // Start GAllary //
 let img_1 = document.getElementById('img_1');
@@ -26,6 +31,7 @@ function cart_wow(){
 }
 
 // End GAllary //
+//-------------------------------
 // Start sidebar
 let btn = document.querySelector("#btn");
 let sidebar = document.querySelector(".sidebar");
