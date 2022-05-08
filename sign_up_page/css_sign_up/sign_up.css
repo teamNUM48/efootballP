@@ -166,14 +166,33 @@ body {
 }
 
 /* ======================================== */
+.form .member {
+    display: flex;
+    color: #fff;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 12px;
+}
+.form .member a {
+    padding-left: 5px;
+    color: var(--font-color1);
+    transition: var(--main-duration) ease;
+}
 
+.form .member a:hover {
+    color: var(--hover-color);
+}
 
-.form p {
+.form .dev {
+    display: flex;
+    justify-content: flex-end;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 60px;
     color: #fff;
 }
 
 .form p span {
     color: var(--font-color1);
+    padding-left: 5px;
 }
