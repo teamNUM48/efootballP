@@ -6,7 +6,7 @@ let price = document.getElementById('price');
 desc = JSON.parse(localStorage.branch);
 
 project_name.innerHTML = desc.title;
-des.innerHTML = desc.desc;
+des.innerHTML = desc.desc3;
 
 price.innerHTML = desc.price
 // Start GAllary //
