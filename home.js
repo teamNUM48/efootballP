@@ -51,7 +51,7 @@ let player_info = [
   },
   {
     player_name: "M.Salah",
-    tittle: "efootball | m.salah",
+    tittle: "efootball | M.Salah",
     player_team: "Liverpool F.C.",
     player_img: "player_info_page/pics/Mohamed Salah - FootyRenders (1).png",
     player_link: "player_info_page/player_info.html",
