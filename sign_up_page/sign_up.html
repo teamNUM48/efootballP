@@ -1,54 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eFootball | Sign Up</title>
-    <link rel="shortcut icon" href="pictures_sign_up/PicsArt_22-04-27_17-43-00-495.png">
-    <!-- css file -->
-    <link rel="stylesheet" href="css_sign_up/sign_up.css">
-    <!-- font awesome library -->
-    <link rel="stylesheet" href="css_sign_up/all.min.css">
-    <!-- Render all elements normally -->
-    <link rel="stylesheet" href="css_sign_up/normalize.css">
-</head>
-<body>
+const pass_field = document.querySelector('.pass');
+const show_btn = document.querySelector('#showHide');
+show_btn.addEventListener('click', function(){
+    if(pass_field.type === "password"){
+        pass_field.type = "text";
+        show_btn.classList.remove("fas");
+        show_btn.classList.remove("fa-eye-slash");
+        show_btn.classList.add("fas");
+        show_btn.classList.add("fa-eye");
+    }else{
+        pass_field.type = "password";
+        show_btn.classList.remove("fas");
+        show_btn.classList.remove("fa-eye");
+        show_btn.classList.add("fas");
+        show_btn.classList.add("fa-eye-slash");
+    }
+})
+//------------------------------- 
 
-    <section class="sign-up">
-            <div class="container">
-                <div class="form">
-                    <div class="main_logo">
-                        <img src="pictures_sign_up/PicsArt_22-04-27_17-43-00-495.png" alt=""><span data-text="eFootball">eFootball</span>
-                    </div>
-                    <form action="../home.html" id="register">
-                        <div class="input-field">
-                            <input type="text" placeholder="Enter your name" id="fullName" required>
-                            <label for="name"><i class="fas fa-user"></i></label>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Enter your user name" id="username" required>
-                            <label for="username"><i class="fas fa-user-circle"></i></label>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Enter your email" id="email" required>
-                            <label for="email"><i class="fas fa-envelope"></i></label>
-                        </div>
-                        <div class="input-field">
-                            <input type="password" class="pass" placeholder="Enter your password" id="pass" required>
-                            <label for="pass"><i class="fas fa-lock icon" id="icon"></i></label>
-                            <i class="fas fa-eye-slash" id="showHide"></i>
-                        </div>
-                        <div class="input-field button">
-                            <input type="submit" value="Sign Up Now">
-                        </div>
-                        <p class="member">Already a member? <a href="../index.html">Log In</a></p>
-                    </form>
-                    <p class="dev">Developed by <span>Ahmed Saber</span></p>
-                </div>
-            </div>
-    </section>
-<script src="sign_up.js"></script>
+let login = [{
+    username:"",
+    email:"",
+    password:"",
+    fullName:""
+}];
+let login2 = [];
+let x = 1;
+let username = document.getElementById('username')
+let fullName = document.getElementById('fullName')
+let email = document.getElementById('email')
+let password = document.getElementById('pass')
+let register = document.getElementById("register")
 
-</body>
-</html>
+register.onsubmit = ()=>{
+    if(x == 1){
+    login[0].username = username.value
+    login[0].fullName = fullName.value
+    login[0].email = email.value
+    login[0].password = pass.value
+    localStorage.login = JSON.stringify(login[0])
+    login2.push(login[0])
+    localStorage.login2 = JSON.stringify(login2)
+    return true;    
+    }
+    else{
+        return false
+    }
+}
