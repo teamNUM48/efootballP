@@ -95,7 +95,7 @@ function showDate(){
     for(let i =0; i < products.length;i++){
         table += `
             <div>
-                <img src="${products[i].Image}" id="image${i}" onmouseleave="main(${i})" onmouseover="adidas(${i})" alt="Sample photo">
+                <img src="${products[i].Image}" id="image${i}" onmouseleave="leaveCard(${i})" onmouseover="overCard(${i})" alt="Sample photo">
                 <div class="text">
                   <h3>${products[i].title}</h3>
                   <p>${products[i].desc}</p>
@@ -108,11 +108,11 @@ function showDate(){
     document.getElementById('id').innerHTML = table;
 
 }
-function main(i){
+function leaveCard(i){
 let im = document.getElementById('image'+i)  
 im.src = products[i].Image
 }
-function adidas(i){
+function overCard(i){
 let im = document.getElementById('image'+i)  
 im.src = products[i].Image2
 }
