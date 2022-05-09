@@ -377,7 +377,49 @@ input[type="text"]::placeholder{
     border-right: var(--font-color1) 2px solid;
 }
 
+.Modal {
+  position: absolute;
+  display: none;
 
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  width: 700px;
+  border-radius: 20px;
+  background: white;
+}
+.Modal-InText {
+  text-align: center;
+  font-size: 20px;
+  transform: translateY(60px);
+}
+.Modal-InBtn {
+  margin-left: 35%;
+  margin-top: 20%;
+  padding: 10px 50px;
+  border-radius: 20px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid white;
+  transition: 0.2s ease-in-out all;
+  cursor: pointer;
+  background: rgba(14, 255, 110, 0.85);
+}
+.Modal-InBtn:hover {
+  background: #fff;
+  border: 1px solid rgba(14, 255, 110, 0.85);
+}
+
+.Modal-InBtn a {
+  color: #fff;
+  text-decoration: none;
+  transition: var(main-duration) ease;
+}
+
+.Modal-InBtn:hover a {
+  color: black;
+}
 /* ===================================================================== */
 /* start footer */
 footer{
