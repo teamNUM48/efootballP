@@ -98,7 +98,7 @@ function showDate(){
                 <img src="${products[i].Image}" id="image${i}" onmouseleave="leaveCard(${i})" onmouseover="overCard(${i})" alt="Sample photo">
                 <div class="text">
                   <h3>${products[i].title}</h3>
-                  <p>${products[i].desc}</p>
+                  <p>${products[i].desc3}</p>
                   <h3>${products[i].price}</h3>
                   <a  onclick="wow(${i})" href="product_info.html">more</a>
                 </div> 
@@ -133,3 +133,26 @@ function scrollToTop() {
   window.scrollTo(0, 0);
 }
 // --------------------------------
+
+function searchDate(value){
+  let table = '';
+  for(let i = 0; i < products.length;i++){
+    let searhP =  products[i].title.toLowerCase()
+      
+    if(searhP.includes(value.toLowerCase())){
+            table += `
+            <div>
+                <img src="${products[i].Image}" id="image${i}" onmouseleave="leaveCard(${i})" onmouseover="overCard(${i})" alt="Sample photo">
+                <div class="text">
+                  <h3>${products[i].title}</h3>
+                  <p>${products[i].desc3}</p>
+                  <h3>${products[i].price}</h3>
+                  <a  onclick="wow(${i})" href="product_info.html">more</a>
+                </div> 
+           </div>
+        `
+    }    
+  document.getElementById('id').innerHTML = table;
+}
+}
+
